@@ -2,23 +2,26 @@
 import React from "react";
 import Link from "next/link";
 import { WavyBackground } from "@/components/wavy-background";
+import { FlipWords } from "@/components/flip-words";
 
 export default function Home() {
   return (
     <div className="relative">
-      <WavyBackground className="max-w-2xl mx-auto pb-40 relative">
-        <p
-          className="text-4xl md:text-6xl lg:text-9xl text-white font-bold inter-var text-center"
+      <WavyBackground className="max-w-4xl mx-auto pb-60 relative">
+        <div
+          className="text-3xl md:text-6xl lg:text-9xl text-white font-semibold inter-var text-center"
           style={{
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Adjust the shadow as needed
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
           }}
         >
-          CyberSage
-        </p>
+          <span className="inline-block">
+            <FlipWords words={['CyberSage']} />
+          </span>
+        </div>
         <p
           className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center"
           style={{
-            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)', // Adjust the shadow as needed
+            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
           }}
         >
           The New Standard For Cybersecurity Assistance

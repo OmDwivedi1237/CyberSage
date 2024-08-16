@@ -14,6 +14,7 @@ const SignUp: React.FC = () => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential?.accessToken;
       console.log("User signed up with Google:", user);
+      console.log("GROQ_API_KEY:", process.env.GROQ_API_KEY);
       router.push("/chat");
     } catch (error) {
       console.error("Google sign-up error:", error);

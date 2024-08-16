@@ -34,7 +34,8 @@ const ChatPage: React.FC = () => {
                 onChange={(e) => {}}
                 onSubmit={(e) => {
                     e.preventDefault();
-                    fetchResponse(e.currentTarget.elements[0].value);
+                    const inputElement = e.currentTarget.elements[0] as HTMLInputElement;
+                    fetchResponse(inputElement.value);
                 }}
             />
             <div className="response">

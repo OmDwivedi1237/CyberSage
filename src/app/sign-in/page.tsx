@@ -55,7 +55,7 @@ const SignIn: React.FC = () => {
           </button>
         </div>
         <div className="text-center mt-4 fade-in">
-          <p className="text-base text-purple-300">Don't have an account? <a href="/sign-up" className="text-blue-500 hover:underline">Sign Up</a></p>
+          <p className="text-base text-purple-300">Don &apos t have an account? <a href="/sign-up" className="text-blue-500 hover:underline">Sign Up</a></p>
         </div>
         <div className="text-center mt-4 fade-in">
           <p className="text-xs text-purple-300">Why we only use oAuth <a href="/whyoauth" className="text-blue-500 hover:underline">Read about it here</a></p>
